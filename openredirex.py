@@ -65,6 +65,8 @@ async def getResponse(session, url, payload, keyword):
         pass
     except UnicodeDecodeError:
         pass
+    except ValueError:
+        pass
     except TooManyRedirects:
         pass
     except ServerTimeoutError:
